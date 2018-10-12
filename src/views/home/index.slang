@@ -1,9 +1,11 @@
 .row
-  #logo
-  .col-sm-12.col-md-6
-    h2 = t "welcome_to_amber"
-    p Thank you for trying out the Amber Framework.  We are working hard to provide a super fast and reliable framework that provides all the productivity tools you are used to without sacrificing the speed.
-    .list-group
-      a.list-group-item.list-group-item-action target="_blank" href="https://docs.amberframework.org" Getting Started with Amber Framework
-      a.list-group-item.list-group-item-action target="_blank" href="https://github.com/veelenga/awesome-crystal" List of Awesome Crystal projects and shards
-      a.list-group-item.list-group-item-action target="_blank" href="https://crystalshards.xyz" What's hot in Crystal right now
+  - instances.each do |instance|
+    .col-sm-12.col-md-6.col-xl-4
+        .card-wrapper
+          .card
+            .img-wrapper
+              img(src="#{instance.picture}")
+            h2 = instance.name
+            .btn-wrapper
+              == link_to("Visit website", instance.url.to_s)
+              == link_to("View github", instance.repo.to_s)

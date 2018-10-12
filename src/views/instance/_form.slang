@@ -8,6 +8,11 @@
   .form-group
     == text_field(name: "name", value: instance.name, placeholder: "Name", class: "form-control")
   .form-group
+    - if instance.picture
+      .img-wrapper
+        img src="#{instance.picture}"
+    == text_field(name: "picture", value: instance.picture, placeholder: "Picture", class: "form-control")
+  .form-group
     == text_field(name: "url", value: instance.url, placeholder: "Url", class: "form-control")
   .form-group
     == text_field(name: "repo", value: instance.repo, placeholder: "Repo", class: "form-control")

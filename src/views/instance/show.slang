@@ -1,5 +1,7 @@
 h1 Show Instance
 p = instance.name
+.img-wrapper
+  img src="#{instance.picture}"
 p = instance.url
 p = instance.repo
 p

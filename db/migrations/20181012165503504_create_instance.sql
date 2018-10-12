@@ -4,6 +4,7 @@ CREATE TABLE instances (
   name VARCHAR,
   url VARCHAR,
   repo VARCHAR,
+  picture VARCHAR,
   created_at TIMESTAMP,
   updated_at TIMESTAMP
 );

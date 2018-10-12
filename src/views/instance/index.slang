@@ -8,6 +8,7 @@
     thead
       tr
         th Name
+        th Picture
         th Url
         th Repo
         th Actions
@@ -15,6 +16,9 @@
       - instances.each do |instance|
         tr
           td = instance.name
+          td
+            .img-wrapper
+              img(src="#{instance.picture}")
           td = instance.url
           td = instance.repo
           td

@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
-    render("index.slang")
+    instances = Instance.all
+    render "index.slang"
   end
 end

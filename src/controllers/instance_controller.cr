@@ -50,6 +50,7 @@ class InstanceController < ApplicationController
   private def instance_params
     params.validation do
       required :name { |f| !f.nil? }
+      required :picture { |f| !f.nil? }
       required :url { |f| !f.nil? }
       required :repo { |f| !f.nil? }
     end

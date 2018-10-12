@@ -4,6 +4,7 @@ class Instance < Granite::Base
 
   # id : Int64 primary key is created for you
   field name : String
+  field picture : String
   field url : String
   field repo : String
   timestamps
