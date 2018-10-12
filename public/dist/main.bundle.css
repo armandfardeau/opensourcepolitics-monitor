@@ -79,6 +79,9 @@ h6, .h6 {
 .table td, .table th {
   vertical-align: middle; }
 
+tr td {
+  word-break: break-word; }
+
 .alert {
   margin-top: 1em; }
   .alert p {

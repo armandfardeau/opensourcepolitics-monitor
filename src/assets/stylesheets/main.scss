@@ -95,6 +95,12 @@ h6, .h6 {
   vertical-align: middle;
 }
 
+tr {
+  td{
+    word-break: break-word;
+  }
+}
+
 .alert {
   margin-top: 1em;
 
